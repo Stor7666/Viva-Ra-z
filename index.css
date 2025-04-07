@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+
+body {
+    @apply bg-gray-50 text-gray-800 font-sans leading-normal tracking-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900;
+}
+
+h1 {
+    @apply text-4xl mb-4;
+}
+
+h2 {
+    @apply text-3xl mb-3;
+}
+
+h3 {
+    @apply text-2xl mb-2;
+}
+
+p {
+    @apply mb-4;
+}
+
+a {
+    @apply text-blue-600 hover:text-blue-800 transition duration-200;
+}
+
+button {
+    @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow-md hover:bg-blue-700 transition duration-200;
+}
+
+input, textarea {
+    @apply border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.container {
+    @apply max-w-7xl mx-auto px-4;
+}
+
+/* Estilos para tarjetas */
+.card {
+    @apply bg-white shadow-lg rounded-lg p-4 mb-4;
+}
+
+.card-header {
+    @apply text-lg font-semibold border-b pb-2 mb-2;
+}
+
+.card-body {
+    @apply text-gray-700;
+}
+
+/* Estilos para el footer */
+footer {
+    @apply bg-blue-600 text-white py-4 text-center;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    @apply bg-blue-800 text-white p-4;
+}
+
+.navbar a {
+    @apply text-white hover:text-blue-300 mx-2;
+}
+
+/* Estilos para el panel de filtros */
+.filter-panel {
+    @apply bg-gray-100 p-4 rounded-lg shadow-md;
+}
+
+/* Estilos para el formulario de suscripción */
+.subscription-plan {
+    @apply bg-blue-100 border border-blue-300 rounded-lg p-4;
+}
