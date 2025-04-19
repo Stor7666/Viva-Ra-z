@@ -1,0 +1,104 @@
+/* Tipografía general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f9ff;
+  color: #1a2b4c;
+  line-height: 1.6;
+}
+
+/* Navbar y Footer */
+nav, footer {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+main {
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+/* Tarjetas generales */
+.card-property,
+.card-service {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  transition: transform 0.2s;
+}
+
+.card-property:hover,
+.card-service:hover {
+  transform: scale(1.02);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion {
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.ubicacion,
+.precio,
+.especialidad {
+  font-size: 0.9rem;
+  color: #2563eb;
+  margin-bottom: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Grid para mostrar tarjetas */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
