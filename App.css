@@ -160,3 +160,55 @@ main {
 .btn-primary:hover {
   background-color: #1d4ed8;
 }
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-section h1 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-section .intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #475569;
+}
+
+.about-block {
+  margin-bottom: 2rem;
+}
+
+.about-block h2 {
+  color: #1e40af;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-block p {
+  color: #334155;
+  line-height: 1.6;
+}
+
+.about-block ul {
+  list-style: none;
+  padding-left: 1rem;
+  color: #334155;
+}
+
+.about-block ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-block ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1e40af;
+}
